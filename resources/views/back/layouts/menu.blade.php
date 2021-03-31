@@ -1,5 +1,8 @@
 
-
+@php
+  use App\Models\Config;
+  $config=Config::find(1);
+@endphp
 <body id="page-top">
 
   <!-- Page Wrapper -->
@@ -56,7 +59,7 @@
 
       </li>
 
-  
+
 
       <!-- Divider -->
       <hr class="sidebar-divider">

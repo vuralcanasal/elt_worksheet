@@ -9,7 +9,6 @@ use App\Models\Category;
 use App\Models\Sheet;
 use Illuminate\Support\Facades\File;
 
-
 class ArticleController extends Controller
 {
     /**

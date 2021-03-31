@@ -9,6 +9,7 @@ use File;
 
 class PageController extends Controller
 {
+    
     public function index(){
       $pages=Page::all();
       return view('back.pages.index',compact('pages'));
