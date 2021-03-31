@@ -22,6 +22,7 @@ class Homepage extends Controller
       }
       view()->share('pages',Page::where('status',1)->orderBy('order','ASC')->get());
       view()->share('categories',Category::where('status',1)->orderBy('name','DESC')->get());
+      view()->share('config',Config::find(1));
     }
     public function index(){
       $data['articles']=Article::with('getCategory')->where('status',1)->whereHas('getCategory',function($query){
